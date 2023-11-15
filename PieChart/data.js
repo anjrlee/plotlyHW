@@ -1,6 +1,6 @@
 async function fetchDataPie() {
     try {
-      const response = await fetch('/PieChart/data.csv');
+      const response = await fetch('PieChart/data.csv');
       const csvContent = await response.text();
       const rows = csvContent.split('\n');
       const dataArray = [];

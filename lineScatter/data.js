@@ -1,7 +1,7 @@
 
 async function fetchDataLS() {
     try {
-      const response = await fetch('/lineScatter/data.csv');
+      const response = await fetch('lineScatter/data.csv');
       const csvContent = await response.text();
       const rows = csvContent.split('\n');
       const dataArray = [];
