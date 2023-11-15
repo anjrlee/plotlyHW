@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>DataVisualization</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper-->
+			<div id="wrapper">
+
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#" class="icon solid fa-home"><span>Home</span></a>
+						<a href="#lineScatter" class="icon solid fa-folder"><span>lineScatter</span></a>
+						<a href="#BarChart" class="icon solid fa-folder"><span>BarChart</span></a>
+						<a href="#PieChart" class="icon solid fa-folder"><span>PieChart</span></a>
+						<!--<a href="#work" class="icon solid fa-folder"><span>Work</span></a>
+						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
+						<a href="https://twitter.com/ajlkn" class="icon brands fa-twitter"><span>Twitter</span></a>-->
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Me -->
+							<article id="home" class="panel intro">
+								<header>
+									<h1>111403505李安之</h1>
+									<p>資料視覺化</p>
+								</header>
+								<a href="#work" class="jumplink pic">
+									
+									<img src="images/me.jpg" alt="" />
+								</a>
+							</article>
+
+						<!-- Work -->
+							
+
+							<article id="lineScatter" class="panel ">
+								<header>
+									<h2>Line&Scatter</h2>
+								</header>
+								<p>全球前一百名書籍分析</p>
+								<div id="lineScatterGraph"></div>
+							</article>
+
+
+							<article id="BarChart" class="panel ">
+								<!--<header>
+									<h2>BarChart</h2>
+								</header>
+								<p>Line&Scatter</p>
+								<div id="BarChartGraph">-->
+									<header>
+										<h2>BarChart</h2>
+									</header>
+									<p>台北市歷年(民國97~111)自殺率</p>
+									<div id="BarChartGraph"></div>
+									
+									
+									
+								
+							</article>
+							
+
+							
+
+							<article id="PieChart" class="panel ">
+								<header>
+									<h2>PieChart</h2>
+								</header>
+								<p>2000年美國犯罪分析</p>
+								
+									<div id="PieChartGraph"></div>
+									
+							
+							</article>
+
+						<!-- Contact -->
+							
+					</div>
+
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="copyright">
+							<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="https://cdn.plot.ly/plotly-2.24.1.min.js"></script>	
+			<script src="lineScatter/data.js"></script>
+			<script src="lineScatter/main.js"></script>
+			<script src="PieChart/data.js"></script>
+			<script src="PieChart/main.js"></script>
+			<script src="BarChart/data.js"></script>
+			<script src="BarChart/data.js"></script>
+			<script src="BarChart/main.js"></script>
+			
+		
+			
+		
+	</body>
+</html>
+<style>
+.BarChartGraph{
+
+}
+.BarChartDiscribe{
+     background-color: bisque;
+	 height: 100%;
+	 width:70%;
+	 left:15%;
+	 position: absolute;
+	 font-size: 5px;
+}
+</style>
