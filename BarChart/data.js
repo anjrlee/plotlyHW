@@ -1,7 +1,7 @@
 
 async function fetchData() {
     try {
-      const response = await fetch('/BarChart/data.csv');
+      const response = await fetch('BarChart/data.csv');
       const csvContent = await response.text();
       const rows = csvContent.split('\n');
       const dataArray = [];
