@@ -61,10 +61,12 @@
 									</header>
 									<p>台北市歷年(民國97~111)自殺率</p>
 									<div id="BarChartGraph"></div>
-									
-									
-									
-								
+									<div class="jumplink pic">
+										<div class="BarChartDiscribe">
+											hi
+										</div>
+									</div>
+
 							</article>
 							
 
@@ -74,10 +76,24 @@
 								<header>
 									<h2>PieChart</h2>
 								</header>
-								<p>2000年美國犯罪分析</p>
-								
+								<p id="PieTitle"></p>
+								<div class="Outter">
 									<div id="PieChartGraph"></div>
-									
+									<div class="BtnDiscribe">
+										<div>
+											點選年份以得知此年美國犯罪比例<br>
+											<script>
+												for (let i = 1960; i <= 2014; i++) {
+													document.write("<button onclick='mainPie("+i+")'>"+i+"</button>");
+												}
+											</script>
+										</div>
+										<div >
+											由圖可知，每年美國的犯罪比例皆以財產來源不明罪(例如貪汙)犯罪最高，接近1/2，而財產竊盜則占比將近三成，謀殺和強姦比例則較低，皆低於1%
+										</div>
+									</div>
+								</div>
+								
 							
 							</article>
 
@@ -119,11 +135,49 @@
 
 }
 .BarChartDiscribe{
-     background-color: bisque;
 	 height: 100%;
 	 width:70%;
 	 left:15%;
 	 position: absolute;
-	 font-size: 5px;
+	 font-size: 0.8vw;
+	 display: grid;
+	 grid-template-columns: 1fr 1fr;
+}
+
+.Outter{
+	
+	height: 100%;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.BarBtnArea{
+	
+}
+
+.BtnDiscribe{
+	
+	display: grid;
+	grid-template-rows: 2fr 1fr;
+}
+
+
+	
+
+.BarChart{
+	position: absolute;
+	background-color: antiquewhite;
+	height: 600px;
+	width: 100%;
+}
+
+button{
+	background-color: rgb(160, 160, 193);
+	height: 10%;
+	width: 13%;
+	position: relative;
+	border-radius: 5%;
+	margin-left: 1%;
 }
 </style>

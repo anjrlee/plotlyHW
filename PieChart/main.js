@@ -1,5 +1,6 @@
-async function main(year) {
+async function mainPie(year) {
     try {
+      document.getElementById("PieTitle").innerText=year+"年美國犯罪分析";
         const dataArray = await fetchDataPie();
         let PieChartGraph=document.getElementById('PieChartGraph');
         let trace1 ={};
@@ -23,5 +24,5 @@ async function main(year) {
   }
 
 
-main(2000);
-document.write("<button>test</button");
+mainPie(2000);
+
