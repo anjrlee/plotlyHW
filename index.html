@@ -46,7 +46,16 @@
 									<h2>Line&Scatter</h2>
 								</header>
 								<p>全球前一百名書籍分析</p>
-								<div id="lineScatterGraph"></div>
+								<div class="OutterLS">
+									<div id="lineScatterGraph"></div>
+									<div class="BtnDiscribe">
+										<div >
+											以上為三組資料分析:第一組資料為評價(x)對價錢(y)，第二組資料為排名(x)對價錢(y)，第三組資料為排名(x)對評價(y)。從第一組資料看出大部分的書籍價錢落在10到20塊不等，並且評價在4.6到4.8的書籍較價錢較接近平均值。標稕差較小，評價較接近兩極的書籍價錢差異較大。從第二組資料可以解析出約差五到十名的書價錢較相似，而排名接近(差5名以內)的書價錢有較大差異，而價錢的極大值分別落在淤50和80名。從第三組數據可以看出排名和評價並無直接關係，前一百名的書評價差異皆不大，也並沒有評價越好排名越高的趨勢
+										</div>
+									</div>
+								</div>
+								
+								
 							</article>
 
 
@@ -59,11 +68,15 @@
 									<header>
 										<h2>BarChart</h2>
 									</header>
-									<p>台北市歷年(民國97~111)自殺率</p>
-									<div id="BarChartGraph"></div>
-									<div class="jumplink pic">
-										<div class="BarChartDiscribe">
-											hi
+									<p>台北市歷年(民國97~111)自殺人數統計</p>
+						
+									<div class="OutterBar">
+										<div id="BarChartGraph"></div>
+										<div class="BtnDiscribe">
+											<div >
+												以上為97年到110年的台北市各區自殺人數統計，其中可以看到大同區站比較少，而北投區、士林區、內湖區以
+												及大安區占比較大，且可以看出每隔4~5年自殺率會上升至總計約700人
+											</div>
 										</div>
 									</div>
 
@@ -104,7 +117,7 @@
 				<!-- Footer -->
 					<div id="footer">
 						<ul class="copyright">
-							<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							資料出處:kaggle、政府資料開放平台
 						</ul>
 					</div>
 
@@ -144,6 +157,13 @@
 	 grid-template-columns: 1fr 1fr;
 }
 
+.LSD{
+	background-color: antiquewhite;
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+
 .Outter{
 	
 	height: 100%;
@@ -152,8 +172,18 @@
 	grid-template-columns: 1fr 1fr;
 }
 
-.BarBtnArea{
-	
+.OutterLS{
+	height: 100%;
+	width: 100%;
+	display: grid;
+	grid-template-rows: 2fr 1fr;
+}
+
+.OutterBar{
+	height: 100%;
+	width: 100%;
+	display: grid;
+	grid-template-rows: 5fr 1fr;
 }
 
 .BtnDiscribe{
